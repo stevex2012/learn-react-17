@@ -4,29 +4,35 @@ import './App.css'
 import {ThemeContext} from './main'
 import Hello from './components/Hello'
 const ColorCtx = createContext('blue')
-
+import Title from './components/Title'
 function App() {
-  const [val, setVal] = useState('red')
-  useEffect(() =>{
+  // const [val, setVal] = useState('red')
+  // const [color, setColor] = useState('red')
+  
+  // useEffect(() =>{
 
-    setTimeout(() =>{
-      setVal('666')
-    }, 3000)
-    setVal('656')
-  }, [])
+  //   setTimeout(() =>{
+  //     setVal('666')
+  //   }, 3000)
+  //   setVal('656')
+  //   setColor('blue')
+  // }, [])
   return (
     <div className="App">
-      {val}
-      <ColorCtx.Provider value={val}>
+      {/* {val}
+      {color} */}
+      {/* <ColorCtx.Provider value={val}> */}
         <Hello />
-      </ColorCtx.Provider>
+        {/* <Title />
+        <h6>h6</h6> */}
+      {/* </ColorCtx.Provider> */}
       {/* <ThemeContext.Consumer>
   {value => <h1>{value}</h1>}
       </ThemeContext.Consumer> */}
     </div>
   )
   }
-
+console.log('app', App.toString())
 export default App
 
 export {

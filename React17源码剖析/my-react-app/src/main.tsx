@@ -4,16 +4,16 @@ import './index.css'
 import App from './App'
 const ThemeContext = createContext('')
 
-console.log('---ThemeContext', ThemeContext)
+// console.log('---ThemeContext', ThemeContext)
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeContext.Provider value="234">
+    {/* <ThemeContext.Provider value="234"> */}
       <App />
-    </ThemeContext.Provider>
+    {/* </ThemeContext.Provider> */}
   </React.StrictMode>,
   document.getElementById('root')
 )
-
+// console.log('App', <App />)
 export {
   ThemeContext
 }
